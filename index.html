@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jennifer Metcalf | CWC Profile</title>
+    <style>
+        /* Embedded CSS for Styling */
+        :root {
+            --cwc-red: #8b0000; /* Institutional style dark red */
+            --cwc-gold: #d4af37;
+            --text-dark: #2d2d2d;
+            --bg-light: #f9f9f9;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .profile-card {
+            background: white;
+            max-width: 750px;
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: row;
+        }
+
+        /* Responsive layout for mobile */
+        @media (max-width: 600px) {
+            .profile-card { flex-direction: column; }
+            .sidebar { width: 100% !important; text-align: center; }
+        }
+
+        .sidebar {
+            background-color: var(--cwc-red);
+            color: white;
+            width: 35%;
+            padding: 30px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .profile-img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            border: 4px solid white;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            font-size: 0.9em;
+            margin-top: 15px;
+        }
+
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            margin: 8px 0;
+            transition: opacity 0.2s;
+        }
+
+        .contact-info a:hover { opacity: 0.8; }
+
+        .main-content {
+            padding: 40px;
+            width: 65%;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 1.8em;
+            color: var(--cwc-red);
+        }
+
+        .title {
+            font-weight: bold;
+            color: #666;
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        h3 {
+            border-bottom: 2px solid var(--cwc-gold);
+            padding-bottom: 5px;
+            margin-top: 25px;
+            font-size: 1.2em;
+        }
+
+        p, li {
+            line-height: 1.6;
+            font-size: 0.95em;
+        }
+
+        .btn-interact {
+            margin-top: 20px;
+            background: var(--cwc-red);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="profile-card">
+    <div class="sidebar">
+        <img src="image_3c5fc6.png" alt="Jennifer Metcalf" class="profile-img">
+        <div class="contact-info">
+            <a href="mailto:jmetcalf@cwc.edu">jmetcalf@cwc.edu</a>
+            <a href="tel:3078552271">307-855-2271</a>
+        </div>
+        <button class="btn-interact" onclick="showWelcome()">Connect</button>
+    </div>
+
+    <div class="main-content">
+        <h1>Jennifer Metcalf</h1>
+        <div class="title">Assistant Director of College and Career Readiness</div>
+        
+        <p>I am dedicated to helping students at Central Wyoming College bridge the gap between their current skills and their future career goals.</p>
+
+        <h3>About College & Career Readiness (CCR)</h3>
+        <p>At CWC, the CCR department focuses on empowering adult learners through:</p>
+        <ul>
+            <li><strong>High School Equivalency:</strong> Comprehensive preparation for the HiSET exam.</li>
+            <li><strong>ESL Services:</strong> Specialized English language instruction for non-native speakers.</li>
+            <li><strong>Workforce Preparation:</strong> Aligning academic goals with local economic needs to ensure students are "job-ready."</li>
+        </ul>
+
+        <p>Our mission is to provide the foundational tools necessary for students to transition successfully into college-level coursework or high-value employment.</p>
+    </div>
+</div>
+
+<script>
+    // Embedded JavaScript for interactivity
+    function showWelcome() {
+        alert("Thank you for reaching out! You can contact me directly at jmetcalf@cwc.edu to discuss your educational pathway.");
+    }
+</script>
+
+</body>
+</html>
